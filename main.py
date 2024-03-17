@@ -3,6 +3,7 @@ import logging
 import colorama
 import time
 import re
+
 from utils.art import ART
 from utils.context import TERMINAL_COMMANDS
 from utils.helper import query_chat_gpt_3_5, extract_paragraphs
@@ -28,6 +29,7 @@ def main():
     Returns:
         None
     """
+
     # Pretty intro
     for _ in range(3): print()
     print(colorama.Fore.LIGHTGREEN_EX + ART + colorama.Style.RESET_ALL + "\n\n")
